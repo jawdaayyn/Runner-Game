@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dong/Desktop/Etna/Runner'
+cc -I./include -W -Werror -Wextra -Wall   -c -o source/main.o source/main.c
+cc -I./include -W -Werror -Wextra -Wall   -c -o source/draw.o source/draw.c
+cc -I./include -W -Werror -Wextra -Wall   -c -o source/init.o source/init.c
+cc -I./include -W -Werror -Wextra -Wall   -c -o source/input.o source/input.c
+cc source/main.o source/draw.o source/init.o source/input.o -lSDL2 -lSDL2_image -lSDL2_ttf -o PEWPEW
+make: Leaving directory '/home/dong/Desktop/Etna/Runner'
+ 
